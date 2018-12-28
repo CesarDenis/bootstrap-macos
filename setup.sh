@@ -123,7 +123,7 @@ function runSetup() {
   #echo -e "\033[1mBOOTSTRAP_MACOS:\033[0m Running install of Java:"
   #echo    "  ./scripts/programming/java.sh"
   #echo
-  ( ./scripts/programming/java.sh )
+  #( ./scripts/programming/java.sh )
 
   # Install Hacker Tools
   #echo
