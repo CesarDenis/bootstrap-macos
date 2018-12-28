@@ -5,22 +5,6 @@ eval "$(rbenv init -)"
 export RUBY_LATEST=$(rbenv install -l 2>/dev/null | awk '$1 ~ /^[0-9.]*$/ {latest=$1} END {print latest}')
 rbenv global $RUBY_LATEST
 
-# pyenv
-eval "$(pyenv init -)"
-export PYTHON_LATEST=$(pyenv install -l 2>/dev/null | awk '$1 ~ /^[0-9.]*$/ {latest=$1} END {print latest}')
-export PYTHON2_LATEST=$(pyenv install -l 2>/dev/null | awk '$1 ~ /^2[0-9.]*$/ {latest=$1} END {print latest}')
-pyenv global $PYTHON_LATEST $PYTHON2_LATEST
-
-
-################################################################################
-# Go                                                                           #
-################################################################################
-export GOPATH="${HOME}/go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-test -d "${GOPATH}" || mkdir "${GOPATH}"
-test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
-
 
 ################################################################################
 # colorls                                                                      #
