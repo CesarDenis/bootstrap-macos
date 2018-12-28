@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
 # Cyberduck
-brew cask install --appdir="/Applications" cyberduck
+#brew cask install --appdir="/Applications" cyberduck
 # Appcleaner
-brew cask install --appdir="/Applications" appcleaner
+#brew cask install --appdir="/Applications" appcleaner
 # Fork
-brew cask install --appdir="/Applications" fork
+#brew cask install --appdir="/Applications" fork
+# GitKraken
+brew cask install --appdir="/Applications" gitkraken
 # Keka
 brew cask install --appdir="/Applications" keka
 # Backup and Sync from Google
-brew cask install --appdir="/Applications" google-backup-and-sync
+#brew cask install --appdir="/Applications" google-backup-and-sync
 
 ################################################################################
 # Terminals                                                                    #
